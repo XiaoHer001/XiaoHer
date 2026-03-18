@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaoher Portfolio | Unity Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Xiaoher <span class="accent">.VR</span></div>
+            <ul class="nav-links">
+                <li><a href="#about" data-lang-key="nav_about">About</a></li>
+                <li><a href="#skills" data-lang-key="nav_skills">Skills</a></li>
+                <li><a href="#resume" data-lang-key="nav_resume">Resume</a></li>
+                <li><a href="#certificates" data-lang-key="nav_certs">Awards</a></li>
+                <li><a href="#projects" data-lang-key="nav_projects">Projects</a></li>
+                <li><a href="#contact" data-lang-key="nav_contact">Contact</a></li>
+            </ul>
+
+            <!-- Button Group: Theme & Language -->
+            <div class="nav-buttons">
+                <button id="theme-toggle" title="Switch Theme"><i class="fas fa-sun"></i></button>
+                <button id="lang-toggle">CN</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-container">
+            <div class="hero-avatar">
+                <img src="images/xiaohericon.png" alt="Xiaoher Avatar">
+                <div class="status-badge"><i class="fas fa-code"></i> Unity Developer</div>
+            </div>
+            <div class="hero-text">
+                <h1 data-lang-key="hero_title">Hi, I'm Xiaoher</h1>
+                <h2 data-lang-key="hero_subtitle">Unity Developer specializing in VR/AR & Interactive Simulation</h2>
+                <p data-lang-key="hero_desc">
+                    Graduated in 2024 from Jilin Animation Institute (VR Technology).
+                    Over 1 year of enterprise Unity experience.
+                    Focusing on Virtual Simulation, VR/AR, and HCI projects.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn primary-btn" data-lang-key="contact_btn">Contact Me</a>
+                    <!-- 隐私保护：跳转至作品区 -->
+                    <a href="#projects" class="btn outline-btn"><i class="fas fa-eye"></i> <span
+                            data-lang-key="btn_works">My Works</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title" data-lang-key="skills_title">Professional Skills</h2>
+        <div class="skills-grid">
+
+            <!-- Unity Engine -->
+            <div class="skill-category">
+                <h3><i class="fab fa-unity"></i> <span data-lang-key="cat_unity">Unity Engine</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_scripting">Unity Scripting
+                            (C#)</span><span>92%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%; background: #8BC34A;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_profiling">Profiling /
+                            Optimization</span><span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%; background: #CDDC39;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_interaction">Plugin / Interaction
+                            Dev</span><span>88%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%; background: #FFC107;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming -->
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> <span data-lang-key="cat_code">Programming</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_csharp">C# / Architecture</span><span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%; background: #4CAF50;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_algo">Data Structures /
+                            Algorithms</span><span>85%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%; background: #4CAF50;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XR Tech -->
+            <div class="skill-category">
+                <h3><i class="fas fa-vr-cardboard"></i> <span data-lang-key="cat_xr">XR Technology</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_vrar">VR / AR Development</span><span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%; background: #2196F3;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_device">VR Device
+                            Adaptation</span><span>90%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%; background: #2196F3;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HCI -->
+            <div class="skill-category">
+                <h3><i class="fas fa-hand-pointer"></i> <span data-lang-key="cat_hci">HCI & Interaction</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_leap">Leap Motion Gestures</span><span>88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%; background: #3F51B5;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_arduino">Arduino / Sensors</span><span>83%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 83%; background: #9C27B0;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Art -->
+            <div class="skill-category">
+                <h3><i class="fas fa-magic"></i> <span data-lang-key="cat_ta">Tech Art (TA)</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_shader">Shader /
+                            Post-processing</span><span>86%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 86%; background: #7B1FA2;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_anim">Animation /
+                            Rendering</span><span>80%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%; background: #FF9800;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3><i class="fab fa-weixin"></i> <span data-lang-key="cat_front">Frontend / Mini Program</span></h3>
+                <div class="skill-item">
+                    <div class="skill-info"><span data-lang-key="skill_wechat">WeChat Mini Program / XR
+                            Frame</span><span>87%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 87%; background: #00C853;"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2 class="section-title" data-lang-key="resume_title">Experience</h2>
+
+        <div class="resume-container">
+            <!-- Work -->
+            <div class="resume-column">
+                <h3 class="resume-header"><i class="fas fa-briefcase"></i> <span data-lang-key="header_work">Work
+                        Experience</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2025.04 - Present</span>
+                        <h4 data-lang-key="job3_title">Unity Developer</h4>
+                        <p class="company" data-lang-key="job3_comp">Mingyang Zhuoyue (Shenyang) Technology Co., Ltd.
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2024.03 - 2024.10</span>
+                        <h4 data-lang-key="job2_title">Unity Engineer</h4>
+                        <p class="company" data-lang-key="job2_comp">Jilin Daodongjiang Technology Co., Ltd.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2023.09 - 2023.12</span>
+                        <h4 data-lang-key="job1_title">Unity VR Intern</h4>
+                        <p class="company" data-lang-key="job1_comp">FAW-Volkswagen (Changchun)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-column">
+                <h3 class="resume-header"><i class="fas fa-graduation-cap"></i> <span
+                        data-lang-key="header_edu">Education</span></h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2020.09 - 2024.06</span>
+                        <h4 data-lang-key="edu_degree">Virtual Reality Technology (Bachelor)</h4>
+                        <p class="company" data-lang-key="edu_school">Jilin Animation Institute</p>
+                        <p class="desc" data-lang-key="edu_desc">
+                            GPA: 3.94/4.00 (Rank 3/61)<br>
+                            Awards: Outstanding Graduate, 1st Prize in National VR Competition (NCVR).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Experience Box -->
+        <div class="other-exp-box">
+            <h3><i class="fas fa-star"></i> <span data-lang-key="header_achieve">Achievements & Community</span></h3>
+            <ul data-lang-key="achieve_list_html">
+                <li><strong>Sharing:</strong> Published 44 Unity tutorials (325k+ views), open-sourced multiple
+                    projects.</li>
+                <li><strong>Service:</strong> Completed 80+ technical consulting orders, resolved 135+ issues.</li>
+                <li><strong>Networking:</strong> Active in Unity official community and industry forums.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2 class="section-title" data-lang-key="certs_title">Certificates & Honors</h2>
+        <div class="cert-grid">
+            <!-- Cert 1 -->
+            <div class="cert-card" onclick="openModal('images/cert1.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert1.jpg" alt="Certificate 1" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert1_title">Automotive Vision 3D Visualization Display System</h3>
+                    <p data-lang-key="cert1_desc">Computer Software Copyright Registration Certificate</p>
+                    <span class="cert-tag">national-level</span>
+                </div>
+            </div>
+            <!-- Cert 2 -->
+            <div class="cert-card" onclick="openModal('images/cert2.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert2.jpg" alt="Certificate 2" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert2_title">Traffic Sign Science Popularization Q&A System</h3>
+                    <p data-lang-key="cert2_desc">Computer Software Copyright Registration Certificate</p>
+                    <span class="cert-tag">national-level</span>
+                </div>
+            </div>
+            <!-- Cert 3 -->
+            <div class="cert-card" onclick="openModal('images/cert3.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert3.jpg" alt="Certificate 3" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert3_title">Design and Implementation of Unity based Automotive Front Beam
+                        Inspection Training System</h3>
+                    <p data-lang-key="cert3_desc">Excellent graduation project at the school leve</p>
+                    <span class="cert-tag">Academic</span>
+                </div>
+            </div>
+            <!-- Cert 4 -->
+            <div class="cert-card" onclick="openModal('images/cert4.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert4.jpg" alt="Certificate 4" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert4_title">Outstanding Graduate</h3>
+                    <p data-lang-key="cert4_desc">Received multiple second-class and third class scholarships from the
+                        school</p>
+                    <span class="cert-tag">Academic</span>
+                </div>
+            </div>
+            <!-- Cert 5 -->
+            <div class="cert-card" onclick="openModal('images/cert5.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert5.jpg" alt="Certificate 5" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert5_title">VR Building Blasting and Safety Training</h3>
+                    <p data-lang-key="cert5_desc">The 6th China Virtual Reality Competition National Finals in 2023</p>
+                    <span class="cert-tag">national-level</span>
+                </div>
+            </div>
+            <!-- Cert 6 -->
+            <div class="cert-card" onclick="openModal('images/cert6.jpg')">
+                <div class="cert-img-wrapper">
+                    <img src="images/cert6.jpg" alt="Certificate 6" class="protected-img">
+                    <div class="zoom-icon"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="cert-content">
+                    <h3 data-lang-key="cert6_title">AR Treatise on Febrile and Miscellaneous Diseases</h3>
+                    <p data-lang-key="cert6_desc">2023 China University Computer Design Competition Jilin Provincial
+                        Competition</p>
+                    <span class="cert-tag">Academic</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title" data-lang-key="projects_title">Selected Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV1pd2oYREGP">
+                <div class="card-img-holder">
+                    <img src="images/car-visualization.jpg" alt="Project 1">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project1_title">Automotive Visualization System</h3>
+                    <p data-lang-key="project1_desc">Unity3D-based car visualizer with multiple configurations and
+                        high-performance optimization.</p>
+                    <div class="tags"><span>Unity</span><span>3D Visualization</span></div>
+                </div>
+            </div>
+
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV1EykEBWEys">
+                <div class="card-img-holder">
+                    <img src="images/vr-party-history.jpg" alt="Project 2">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project2_title">VR History Exhibition Hall</h3>
+                    <p data-lang-key="project2_desc">High-fidelity modeling, baked lighting, and immersive VR
+                        interaction.</p>
+                    <div class="tags"><span>VR</span><span>HTC Vive</span></div>
+                </div>
+            </div>
+
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV1J442197GT">
+                <div class="card-img-holder">
+                    <img src="images/traffic-sign-quiz.jpg" alt="Project 3">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project3_title">Traffic Sign Quiz System</h3>
+                    <p data-lang-key="project3_desc">Educational simulation system with interactive quizzes and data
+                        tracking.</p>
+                    <div class="tags"><span>Education</span><span>UI/UX</span></div>
+                </div>
+            </div>
+
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV1NM4m1k7nK">
+                <div class="card-img-holder">
+                    <img src="images/xiaoyudot-chat.jpg" alt="Project 4">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project4_title">Xiaoyudot AI Chat</h3>
+                    <p data-lang-key="project4_desc">Integrated voice recognition and AI API for natural language
+                        conversation.</p>
+                    <div class="tags"><span>AI</span><span>Voice API</span></div>
+                </div>
+            </div>
+
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV11vHpzVEpF">
+                <div class="card-img-holder">
+                    <img src="images/signature-wall.jpg" alt="Project 5">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project5_title">Electronic Signature Wall Interactive Platform</h3>
+                    <p data-lang-key="project5_desc">Write the signature on the screen and overlay it on the card,
+                        upload it to the server for scanning and downloading.</p>
+                    <div class="tags"><span>LineRenderer</span><span>HTTP</span></div>
+                </div>
+            </div>
+
+            <div class="project-card" data-link="https://www.bilibili.com/video/BV1jTUWB2ExW">
+                <div class="card-img-holder">
+                    <img src="images/sandplay-therapy.jpg" alt="Project 6">
+                    <div class="overlay"><i class="fas fa-play-circle"></i></div>
+                </div>
+                <div class="card-content">
+                    <h3 data-lang-key="project6_title">Psychological sandbox interactive system</h3>
+                    <p data-lang-key="project6_desc">Click on the screen to place sand tools, which can load and save
+                        sand table scenes, and export psychological reports.</p>
+                    <div class="tags"><span>PDF</span><span>Outline</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" data-lang-key="contact_title">Contact Me</h2>
+        <div class="contact-box">
+            <p data-lang-key="contact_intro">Feel free to reach out for technical exchange or collaboration.</p>
+            <a href="javascript:void(0)" class="email-link" onclick="copyEmail(this)"
+                data-copy-text="xhrvrstudio@163.com" title="Click to Copy / 点击复制">
+                xhrvrstudio@163.com
+            </a>
+
+            <div class="social-links">
+                <!-- GitHub -->
+                <a href="https://github.com/XiaoHer001" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+
+                <!-- WeChat Mini Program (New) -->
+                <a href="javascript:void(0)" class="social-icon" onclick="openModal('images/miniprogram.jpg')"
+                    title="WeChat Mini Program">
+                    <i class="fab fa-weixin"></i>
+                </a>
+
+                <!-- Bilibili -->
+                <a href="https://space.bilibili.com/454661397?spm_id_from=333.1007.0.0" target="_blank" class="social-icon"><i
+                        class="fab fa-bilibili"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Xiaoher. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content-wrapper">
+            <img class="modal-content protected-img" id="img01">
+            <div class="protection-overlay"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
